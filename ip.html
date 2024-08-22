@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adresse IP</title>
+        <style>
+            body{
+                font-family: Arial;
+                margin: 70px;
+                padding: 70px;
+                background-color: rgb(139, 238, 144);
+            }
+            .container{
+                max-width: 700px;
+                max-height: 400px;
+                margin: 0 auto;
+                padding: 70px;
+                background-color: aliceblue;
+                border-radius: 8px;
+                box-shadow: 0 0 10px;
+            }
+            h1{
+                text-align: center;
+            }
+            input[type="text"]{
+                width: calc(100% - 20px);
+                padding: 10px;
+                margin-bottom: 16px;
+                border: 1 px solid #ddd;
+                border-radius: 4px;
+            }
+            input[type="submit"]{
+                width: 100%;
+                padding: 10px;
+                background-color: #007bff;
+                border: none;
+                border-radius: 4px;
+                color: #fff;
+                font-size: 16px;
+                cursor: pointer;
+                
+            }
+            input[type="submit"]:hover{
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>INFORMATION D'ADRESSE IP</h1>
+            <form action="ip.cgi" method="get">
+                <span>Entrer votre adresse IP</span>
+                <input type="texte" placeholder="192.243.1.2" name="ip">
+                <input type="submit" value="voir info">
+            </form>
+        </div>
+    </body>
+</html>
